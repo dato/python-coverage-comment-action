@@ -1,5 +1,5 @@
 # If you change anything here, bump the version in:
-# - Dockerfile.run
+# - run/Dockerfile
 # - .github/workflows/docker.yml
 
 FROM python:3.10-slim
