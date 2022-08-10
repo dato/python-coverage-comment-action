@@ -14,6 +14,7 @@ WORKDIR /workdir
 COPY pyproject.toml ./
 COPY poetry.lock ./
 COPY coverage_comment ./coverage_comment
+RUN pip install poetry
 RUN poetry install --no-dev
 
 CMD [ "coverage_comment" ]
